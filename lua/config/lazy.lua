@@ -21,47 +21,64 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins" },
 
+    -- { "neovim/nvim-lspconfig" },
+    { "hrsh7th/nvim-cmp" },
+    { "hrsh7th/cmp-nvim-lsp" },
+    { "hrsh7th/cmp-buffer" },
+    { "hrsh7th/cmp-path" },
+    { "hrsh7th/cmp-cmdline" },
+    { "hrsh7th/cmp-vsnip" },
+    { "hrsh7th/vim-vsnip" },
+    -- Optionally add luasnip, ultisnips, or snippy if needed
+    -- { "L3MON4D3/LuaSnip" },
+    -- { "SirVer/ultisnips" },
+    -- { "dcampos/nvim-snippy" },
+    --
+    -- {'akinsho/toggleterm.nvim', version = "*", config = true},
+
     -- Coding plugins
     -- { import = "lazyvim.plugins.extras.coding.copilot-chat" },
     -- { import = "lazyvim.plugins.extras.coding.copilot" },
-    { import = "lazyvim.plugins.extras.coding.luasnip" },
+    -- { import = "lazyvim.plugins.extras.coding.luasnip" },
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
     { import = "lazyvim.plugins.extras.coding.neogen" },
+    --
+    -- --lang
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.json" },
-    -- Formatting and linting
+    -- { import = "lazyvim.plugins.extras.lang.vue" },
+    { import = "lazyvim.plugins.extras.lang.yaml" },
+    --
+    -- -- Formatting and linting
     { import = "lazyvim.plugins.extras.formatting.black" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
-
-    -- Editor plugins
+    --
+    -- -- Editor plugins
     { import = "lazyvim.plugins.extras.editor.mini-move" },
-
-    -- UI plugins
+    { import = "lazyvim.plugins.extras.editor.dial" },
+    { import = "lazyvim.plugins.extras.editor.inc-rename" },
+    -- -- { import = "lazyvim.plugins.extras.editor.fzf" },
+    --
+    -- -- UI plugins
     { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
     -- { import = "lazyvim.plugins.extras.ui.mini-starter" },
     { import = "lazyvim.plugins.extras.ui.treesitter-context" },
-
+    --
     -- Utility plugins
-    -- { import = "lazyvim.plugins.extras.util.chezmoi" },
+    { import = "lazyvim.plugins.extras.util.chezmoi" },
     -- { import = "lazyvim.plugins.extras.util.gitui" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-    -- { import = "lazyvim.plugins.extras.util.startuptime" },
+    { import = "lazyvim.plugins.extras.util.dot" },
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    { import = "lazyvim.plugins.extras.util.startuptime" },
 
     -- Language-specific plugins
-    -- { import = "lazyvim.plugins.extras.lang.vue" },
-    -- { import = "lazyvim.plugins.extras.lang.yaml" },
 
     -- { import = "copilot.lua" },
     -- { import = "CopilotChat.nvim" },
 
-    { import = "lazyvim.plugins.extras.editor.dial" },
-    -- { import = "lazyvim.plugins.extras.editor.fzf" },
-    { import = "lazyvim.plugins.extras.editor.inc-rename" },
-    { import = "lazyvim.plugins.extras.util.dot" },
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     -- { import = "lazyvim.plugins.extras.util.gitui" },
-    { import = "lazyvim.plugins.extras.coding.mini-comment" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

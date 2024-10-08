@@ -1,5 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  dependencies = {
+    { "windwp/nvim-ts-autotag" },
+  },
   version = false, -- last release is way too old and doesn't work on Windows
   build = ":TSUpdate",
   event = { "LazyFile", "VeryLazy" },
