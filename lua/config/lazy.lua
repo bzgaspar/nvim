@@ -34,7 +34,7 @@ require("lazy").setup({
     -- { "SirVer/ultisnips" },
     -- { "dcampos/nvim-snippy" },
     --
-    -- {'akinsho/toggleterm.nvim', version = "*", config = true},
+    { "akinsho/toggleterm.nvim", version = "*", config = true },
 
     -- Coding plugins
     -- { import = "lazyvim.plugins.extras.coding.copilot-chat" },
