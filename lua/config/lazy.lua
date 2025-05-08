@@ -18,18 +18,8 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    -- import/override with your plugins
-    { import = "plugins" },
 
-    -- { "neovim/nvim-lspconfig" },
-    { "hrsh7th/nvim-cmp" },
-    { "hrsh7th/cmp-nvim-lsp" },
-    { "hrsh7th/cmp-buffer" },
-    { "hrsh7th/cmp-path" },
-    { "hrsh7th/cmp-cmdline" },
-    { "hrsh7th/cmp-vsnip" },
     { "hrsh7th/vim-vsnip" },
-    --
     { "akinsho/toggleterm.nvim", version = "*", config = true },
 
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
@@ -63,12 +53,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "lazyvim.plugins.extras.util.startuptime" },
 
-    -- Language-specific plugins
-
-    -- { import = "copilot.lua" },
-    -- { import = "CopilotChat.nvim" },
-
-    -- { import = "lazyvim.plugins.extras.util.gitui" },
+    -- import/override with your plugins
+    { import = "plugins" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
